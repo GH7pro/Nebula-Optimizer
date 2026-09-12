@@ -1,0 +1,2 @@
+Hardware Profile: low
+Applied: 2026-09-12T11:08:34.072123197

@@ -1,0 +1,22 @@
+{
+    "blend": {
+        "func": "add",
+        "srcrgb": "srcalpha",
+        "dstrgb": "1-srcalpha"
+    },
+    "vertex": "nebula_colorgrade",
+    "fragment": "nebula_colorgrade",
+    "attributes": [ "Position" ],
+    "samplers": [
+        { "name": "DiffuseSampler" }
+    ],
+    "uniforms": [
+        { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+        { "name": "OutSize", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+        { "name": "saturation", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "brightness", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "contrast", "type": "float", "count": 1, "values": [ 1.0 ] },
+        { "name": "vignette", "type": "float", "count": 1, "values": [ 0.0 ] },
+        { "name": "sepia", "type": "float", "count": 1, "values": [ 0.0 ] }
+    ]
+}

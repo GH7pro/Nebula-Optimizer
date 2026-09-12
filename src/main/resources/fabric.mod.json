@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "nebula",
+  "version": "${version}",
+  "name": "Nebula Optimizer",
+  "description": "Mod de otimização completo para Minecraft - CPU, GPU, RAM, Bateria e mais!",
+  "authors": ["Seu Nome"],
+  "contact": {
+    "homepage": "https://github.com/seu-usuario/nebula",
+    "sources": "https://github.com/seu-usuario/nebula"
+  },
+  "license": "MIT",
+  "icon": "assets/nebula/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.nebula.NebulaClient"
+    ],
+    "main": [
+      "com.nebula.Nebula"
+    ],
+    "modmenu": [
+      "com.nebula.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "nebula.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=7.0.0"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/seu-discord",
+        "modmenu.github": "https://github.com/seu-usuario/nebula",
+        "modmenu.twitter": "https://twitter.com/seu-twitter"
+      }
+    }
+  }
+}

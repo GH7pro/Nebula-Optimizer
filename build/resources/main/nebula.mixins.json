@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nebula.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "VideoSettingsScreenMixin",
+    "ParticleMixin",
+    "EntityRenderDispatcherMixin",
+    "BlockEntityRenderDispatcherMixin",
+    "GameRendererAccessor",
+    "RedstoneWireMixin",
+    "GameRendererMixin",
+    "FallingBlockEntityRendererMixin",
+    "MobEntityCullerMixin",
+    "LightmapMixin",
+    "ClientPlayerMixin",
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
